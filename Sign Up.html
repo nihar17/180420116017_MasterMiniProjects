@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Sign In</title>
+<link rel="stylesheet" href="Sign Up.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		</br>
+		<h1>Sign Up</h1>
+		</div>
+		<div class="main" ng-app = "mainApp" ng-controller = "signUpController">
+			<form action="home1.html" novalidate name="signUp">
+				<input style="margin-bottom:20px;" type="text" name="firstname" placeholder="Firstname" ng-model = "firstName" required autocomplete="off">
+				<span style = "color:red;" ng-show = "signUp.firstname.$dirty && signUp.firstname.$invalid">
+					<span ng-show = "signUp.firstname.$error.required">First Name is required.</span>
+                </span>
+				</br>
+				<input style="margin-bottom:20px;" type="text" name="lastname" placeholder="Lastname" ng-model="lastName" required autocomplete="off">
+				<span style = "color:red" ng-show = "signUp.lastname.$dirty && signUp.lastname.$invalid">
+					<span ng-show = "signUp.lastname.$error.required">Last Name is required.</span>
+                </span>
+				</br>
+				<input style="margin-bottom:20px;" type="email" name="email" placeholder="Email address" ng-model="email" required autocomplete="off">
+				<span style = "color:red" ng-show = "signUp.email.$dirty && signUp.email.$invalid">
+					<span ng-show = "signUp.email.$error.required">Email is required.</span>
+					<span ng-show = "signUp.email.$error.email">Invalid email address.</span>
+				 </span>
+				</br>
+				<input type="number" style="margin-bottom:20px;" placeholder="Contact No." ng-model="mobile_number" name="mobile_number" ng-pattern="/^[7-9][0-9]{9}$/" required>
+				<span style = "color:red" ng-show="signUp.mobile_number.$error.pattern">Please enter valid number!</span>
+				</br>
+				<input style="margin-bottom:20px;" type="password" name="password" placeholder="Password(min. 8 characters)" ng-model="password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/" required autocomplete="off">
+				<span style = "color:red" ng-show="signUp.password.$error.pattern">Please enter valid password!</span>
+				</br>
+				<button ng-disabled = "signUp.firstname.$dirty &&
+                        signUp.firstname.$invalid || signUp.lastname.$dirty &&
+                        signUp.lastname.$invalid || signUp.email.$dirty &&
+                        signUp.email.$invalid || signUp.mobile_number.$error.pattern || signUp.password.$error.pattern " type="submit">Sign Up</button>
+			</form>
+		</div>
+
+		
+	</div>
+	<script>
+		var mainApp = angular.module("mainApp", []);
+		
+		mainApp.controller('signUpController', function($scope) {
+		   $scope.reset = function() {
+			   $scope.firstName = "Mahesh";
+               $scope.lastName = "Parashar";
+               $scope.email = "MaheshParashar@tutorialspoint.com";
+			   $scope.mobile_number = 8866043750
+
+		   }
+		   
+		   $scope.reset();
+		});
+	 </script>
+</body>
+
+</html>

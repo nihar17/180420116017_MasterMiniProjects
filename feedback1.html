@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="feedback1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#ffa42e;">&times;</a>
+		<div class="container">
+			<p>Please Select Feedback Option:</p>
+			Stylists:<input type="radio" name="gender" onclick="mFunction()" style="margin-right:8px;">
+			Salon:<input type="radio" name="gender" onclick="myFunction()"><br>
+			</br>
+
+			<label for="Stylists">Stylists:</label>
+			  <select name="Stylists" id="Stylists" required>
+			  <option value="none">Select your Stylist</option>
+				<option value="Hair">Hair Specialists</option>
+				<option value="Shaving">Shaving Specialists</option>
+				<option value="waxing">Waxing Specialists</option>
+				<option value="facial">Facials Specialists</option>
+				<option value="massage">Massage Specialists</option>
+			  </select>
+			
+	<br>
+	<br>
+<textarea id="Textarea"placeholder="Enter Your Feedback..." cols="40"></textarea>
+<button class="b1" onclick="closeNav()">Submit</button>
+
+<script>
+function myFunction() {
+  document.getElementById("Stylists").disabled = true;
+  document.getElementById("Textarea").focus();
+}
+function mFunction() {
+  document.getElementById("Stylists").disabled = false;
+  document.getElementById("Stylists").focus();
+
+  }
+
+</script>
+
+		</div>
+	</div>
+	
+<button class="b" onclick="openNav()" style="position:fixed;">Give Your Feedback</button>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "350px";
+  document.getElementById("mySidenav").style.margin = "10px";
+  document.getElementById("mySidenav").style.height = "400px";
+  document.getElementById("mySidenav").style.background = "rgb(0,0,0,0.5)";
+
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  	document.getElementById("mySidenav").style.height = "0px";
+
+}
+</script>
+   
+<div class="container2">
+	<div class="f1">
+		<img src="nihar.jpeg"width="100px" height="100px"></img>
+		<p>Username : Nihar_17</p>
+		
+		<span style="margin-left:140px; color:#ffa42e;">Rating :</span>
+		<span class="fa fa-star checked" style="margin-left:-1px;"></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked"></span>
+		<p style="margin-top:12px;">Feedback Type : Salon</p>
+		
+		
+		<details style="margin-left:10px; color:#d5ba9f;">It was relaxing experience for me when i visited this place. Staff is good and well trained. Overall good
+		<summary style="outline:none; border:none;">See Feedback</summary></details>
+		</div>
+
+
+	<div class="f1">
+		<img src="karsh.jpeg"width="100px" height="100px"></img>
+		<p>Username : karsh_13</p>
+		
+		<span style="margin-left:140px; color:#ffa42e;">Rating :</span>
+		<span class="fa fa-star checked" style="margin-left:-1px;"></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked"></span>
+		<p style="margin-top:12px;">Feedback Type : Stylist</p>
+		
+		<details style="margin-left:10px; color:#d5ba9f;">I got my hair done. he was amazing and took his time to make it perfect! I was a little nervous when i first saw my hair color and highlight but he did something and made it beautiful! 
+		<summary style="outline:none; border:none;">See Feedback</summary></details>
+		</div>
+		
+		
+		<div class="f1">
+		<img src="kevin.jpeg"width="100px" height="100px"></img>
+		<p>Username : Kevin_38</p>
+		
+		<span style="margin-left:140px; color:#ffa42e;">Rating :</span>
+		<span class="fa fa-star checked" style="margin-left:-1px;"></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star "></span>
+		<p style="margin-top:12px;">Feedback Type : Salon</p>
+		
+		<details style="margin-left:10px; color:#d5ba9f;">I got a great deal and best haircut ever. I recommend this place to all.
+		<summary style="outline:none; border:none;">See Feedback</summary></details>
+		</div>
+		
+		
+		<div class="f1">
+		<img src="chirag.jpeg"width="100px" height="100px"></img>
+		<p>Username : Chirag_06</p>
+		
+		<span style="margin-left:140px; color:#ffa42e;">Rating :</span>
+		<span class="fa fa-star checked" style="margin-left:-1px;"></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked"></span>
+		<p style="margin-top:12px;">Feedback Type : Stylist</p>
+		
+		<details style="margin-left:10px; color:#d5ba9f;">John is amazing! He takes his time and he makes sure you get the haircut you want. I will be going back.
+		<summary style="outline:none; border:none;">See Feedback</summary></details>
+		
+		<div class="f1">
+		<img src="nirav.jpeg"width="100px" height="100px"></img>
+		<p>Username : Nirav_49	  </p>
+		
+		<span style="margin-left:140px; color:#ffa42e;">Rating :</span>
+		<span class="fa fa-star checked" style="margin-left:-1px;"></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star checked "></span>
+		<span class="fa fa-star "></span>
+		<p style="margin-top:12px;">Feedback Type : Stylist</p>
+		
+		<details style="margin-left:10px; color:#d5ba9f;">John is very nice and great hair stylist. He gave me a new look.
+		<summary style="outline:none; border:none;">See Feedback</summary></details>
+		</div>
+</div>
+
+
+
+</body>
+</html> 

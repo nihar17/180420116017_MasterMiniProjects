@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Book Appointment</title>
+	<link rel="stylesheet" href="booking.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<h1 align="center">Book Your Appointment</h1>
+		</div>
+		<div class="main">
+		<form action="home1.html">
+			<input type="text" name="name" required placeholder="Your Name" autocomplete="off">
+			</br>
+			<input type="Email" name="Email" required placeholder="Email" autocomplete="off">
+			</br>
+			<input type="tel" name="Contact No." maxlength="10" required placeholder="Contact No." autocomplete="off">
+			</br>
+			
+			<lable style="color:#d5ba9f;">Book Your Date</br><input type="date" name="date" required placeholder="Book Your Date"></lable>
+			</br>
+			<lable style="color:#d5ba9f;">Book Your Time<br><input type="time" name="time" required placeholder="Book your Time" ></lable>
+			<br>
+			<label for="Services">Services:</label>
+			  <select name="Services" id="Services" required>
+			  <option value="none">Select Service</option>
+				<option value="Haircuts">Hair Cutting</option>
+				<option value="Haircolor">Hair Color</option>
+				<option value="Shaving">Beard Shaving</option>
+				<option value="HairShampoo">Hair Shampoo</option>
+				<option value="Hairconditioning">Hair Conditioning</option>
+				<option value="bodywaxing">Body Waxing</option>
+				<option value="facials">Facials</option>
+				<option value="massage">Massage</option>
+			  </select>
+			  
+			</br>
+			<label for="Stylists">Stylists:</label>
+			  <select name="Stylists" id="Stylists" required>
+			  <option value="none">Select your Stylist</option>
+				<option value="Hair">Hair Specialists</option>
+				<option value="Shaving">Shaving Specialists</option>
+				<option value="waxing">Waxing Specialists</option>
+				<option value="facial">Facials Specialists</option>
+				<option value="massage">Massage Specialists</option>
+			  </select>
+			<br>
+			<button>Book Now</button>
+			
+		</form>
+		</div>
+	</div>
+</body>
+</html>
